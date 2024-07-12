@@ -9,7 +9,7 @@ import java.util.Set;
 public class MapInterfaceDemo {
 
 	public static void main(String[] args) {
-		HashMap<Integer, String> a = new HashMap<>();
+		Map<Integer, String> a = new HashMap<>();
 		a.put(11, "Apple");
 		a.put(2, "Orange");
 		a.put(3, "Mango");
