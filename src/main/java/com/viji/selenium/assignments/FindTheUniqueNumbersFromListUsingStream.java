@@ -11,9 +11,7 @@ public class FindTheUniqueNumbersFromListUsingStream {
 	@Test
 	public void ArrayListDemo() {
 		List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 4, 5, 3, 1);
-		for (Integer number : numbers) {
-
-		}
+		
 	}
 
 	@Test
