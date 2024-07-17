@@ -16,7 +16,8 @@ public class ACompleteForm {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1000));
 		driver.findElement(By.name("name")).sendKeys("Viji M");
-		driver.findElement(By.cssSelector(".form-control.ng-untouched.ng-pristine.ng-invalid")).sendKeys("abc@gmail.com");
+		driver.findElement(By.cssSelector(".form-control.ng-untouched.ng-pristine.ng-invalid"))
+				.sendKeys("abc@gmail.com");
 		driver.findElement(By.id("exampleInputPassword1")).sendKeys("12345");
 		driver.findElement(By.id("exampleCheck1")).click();
 		WebElement element = driver.findElement(By.id("exampleFormControlSelect1"));
@@ -24,9 +25,10 @@ public class ACompleteForm {
 		select.selectByIndex(1);
 		driver.findElement(By.id("inlineRadio1")).click();
 		driver.findElement(By.xpath("//div[@class='form-group'] //input[@name='bday']")).sendKeys("09-07-2024");
+
 		driver.findElement(By.className("btn-success")).click();
 		System.out.println(driver.findElement(By.className("alert-success")).getText());
-		
+
 	}
 
 }
